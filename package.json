@@ -1,0 +1,27 @@
+{
+  "name": "duvel.js",
+  "version": "0.1.0",
+  "description": "The HTML Presentation Framework",
+  "homepage": "http://v-vansteen.github.io/duvel.js",
+  "subdomain": "duveljs",
+  "author": {
+    "name": "Vincent Van Steenbergen",
+    "email": "vincent@vansteen.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/v-vansteen/duvel.js.git"
+  },
+  "engines": {
+    "node": "~0.10.0"
+  },
+  "dependencies": {
+    "phantomjs": "~1.9.7"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/v-vansteen/duvel.js/blob/master/LICENSE"
+    }
+  ]
+}
