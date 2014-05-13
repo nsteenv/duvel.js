@@ -1,0 +1,29 @@
+{
+    "httpAuth": {
+        "username": "httpauthuser",
+        "password": "httpauthpass"
+    },
+    "routes": [
+        {
+            "route": "/login",
+            "ignore": true
+        },
+        {
+            "method": "POST",
+            "route": "/login",
+            "data": {
+                    "email": "user@domain.com",
+                    "password": "passw0rd",
+            }
+        },
+        {
+            "route": "/admin/email_viewer#/type/ASSESSMENT_REMINDER",
+            "script": "$('#emailViewerTable tbody tr:first').click()",
+            "wait": 500
+        },
+        {
+            "route": "/logout",
+            "ignore": true
+        }
+    ]
+}
