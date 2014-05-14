@@ -42,222 +42,103 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
 				<section>
-					<h1>Duvel.js</h1>
-					<h3>Tu peux pas test</h3>
+					<h1>Tu peux pas test</h1>
 					<p>
 						<small>Présenté par <a href="http://vansteen.fr">Vincent Van Steenbergen</a> / <a href="http://twitter.com/nsteenv">@nsteenv</a></small>
 					</p>
 				</section>
 
 				<section>
-					<section>
-						<h2>Petite Question</h2>
-						<p class="fragment" data-fragment-index="0">Quelle sont les différences entre ces deux images?</p>
-					</section>
-					<section>
-						<img src="img/sample_old.png"/>
-					</section>
-					<section>
-						<img src="img/sample_new.png"/>
-					</section>
-					<section>
-						<h2>Comment détecter cette modification?</h2>
-					</section>
-					<section>
-						<h2>Mais encore</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">Qui ici à déjà dû maintenir du code web legacy?</p>
-							<p class="fragment" data-fragment-index="1">Assurer:</p>
-							<ul class="fragment" data-fragment-index="1">
-								<li class="fragment" data-fragment-index="2">Changements de styles</li>
-								<li class="fragment" data-fragment-index="3">Rendu responsive mutliplateformes</li>
-								<li class="fragment" data-fragment-index="4">Comportement JS</li>
-								<li class="fragment" data-fragment-index="5">Cohérence des données affichées</li>
-							</ul>
-						</p>
-					</section>
-					<section>
-						<h2>Vous faites comment?</h2>
-						<p class="fragment" data-fragment-index="0">Des tests unitaires/intégration?</p>
-						<p class="fragment" data-fragment-index="1">Côté front où back?</p>
-						<p class="fragment" data-fragment-index="2">Des tests d'acceptance utilisateur?</p>
-						<p class="fragment" data-fragment-index="3">Pas de tests du tout?</p>
-					</section>
-
-
-					<section>
-						<h2>Bien souvent...</h2>
-						<p><h1 class="fragment" data-fragment-index="0">Tu peux pas test!</h1></p>
-						<p class="fragment" data-fragment-index="1">Tatata!</p>
-					</section>
+					<h2>Whoami</h2>
+					<p class="fragment" data-fragment-index="0">Développeur web freelance</p>
+					<p class="fragment" data-fragment-index="1">Travaille pour une société anglaise sur une grosse appli web</p>
+					<p class="fragment" data-fragment-index="3">Grosse base de code, plusieurs devs depuis plus de 3 ans</p>
 				</section>
 
 				<section>
-					<section>
-						<h2>Une idée révolutionaire...</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">... ou pas</p>
-						</p>
-						<p>
-							<p class="fragment" data-fragment-index="1">Si on fesait des captures d'écran de chaque page?</p>
-							<p class="fragment" data-fragment-index="2">Et si on comparait tout ça?</p>
-							<p class="fragment" data-fragment-index="3">Pour deux révisions différentes de l'appli?</p>
-						</p>
-					</section>
-					<section>
-						<h2>Avantages</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">Multi-langages, multi-plateformes</p>
-							<p class="fragment" data-fragment-index="1">Ne pas avoir a maintenir de tests pour le front</p>
-							<p class="fragment" data-fragment-index="2">Répérer les différences (même minimes) entre deux versions</p>
-							<p class="fragment" data-fragment-index="3">Détecter les erreurs de style</p>
-							<p class="fragment" data-fragment-index="4">Tester le comportement face à un utilisateur</p>
-							<p class="fragment" data-fragment-index="5">Peut même être utilisé pour tester des APIs (un peu brutal!)</p>
-							<p class="fragment" data-fragment-index="6">Tester différentes résolutions</p>
-						</p>
-					</section>
-					<section>
-						<h2>Inconvénients</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">Prend un peu de temps a tourner sur toute l'appli (15-20mn pour ~300 screenshots)</p>
-							<p class="fragment" data-fragment-index="1">Détecte les modifications, pas les erreurs</p>
-							<p class="fragment" data-fragment-index="2">Ne compare que deux révisions entre elles</p>
-							<p class="fragment" data-fragment-index="3">Demande une validation "manuelle" des différences</p>
-							<p class="fragment" data-fragment-index="4">Ne garantit pas la cohérence des données</p>
-						</p>
-					</section>
-					<section>
-						<h2>Conclusion</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">Intéressant combiné à des tests au niveau du back-end</p>
-							<p class="fragment" data-fragment-index="1">Gros gain de temps sur des applis existantes</p>
-							<p class="fragment" data-fragment-index="2">Facile à mettre en place</p>
-						</p>
-					</section>
-					<section>
-						<h1>C'est bien!</h1>
-						<p class="fragment" data-fragment-index="0">Mais comment?</p>
-					</section>
+					<h2>Tester le front</h2>
+					<p class="fragment" data-fragment-index="0">Ecrire des tests unitaires pour toute l'appli?</p>
+					<p class="fragment" data-fragment-index="1">Trés long, donc trés cher</p>
+					<p class="fragment" data-fragment-index="2">Maintenir les tests à jour a chaque nouvelle évolution</p>
+					<p class="fragment" data-fragment-index="3"><strong>Surtout: j'avais pas envie!</strong></p>
 				</section>
 
 				<section>
-					<section>
-						<h2>Fonctionnement</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">Déployer deux versions de l'application (ie pre-prod/prod)</p>
-							<p class="fragment" data-fragment-index="1">Mettre les deux BDD dans le même état connu</p>
-							<p class="fragment" data-fragment-index="2">Lancer les captures d'écran pour chaque révision</p>
-							<p class="fragment" data-fragment-index="3">Comparer les images deux à deux</p>
-							<p class="fragment" data-fragment-index="4">Générer l'image différentielle</p>
-							<p class="fragment" data-fragment-index="5">Valider les différences</p>
-						</p>
-					</section>
-					<section>
-						<h2>Déploiement/BDD</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">A vous d'adapter à votre architecture</p>
-							<p class="fragment" data-fragment-index="1">Conseil: deux serveurs de tests, deux BDD</p>
-							<p class="fragment" data-fragment-index="2">Permet de tester l'insertion/modification de données</p>
-							<p class="fragment" data-fragment-index="3">Conseil: utiliser un dump de prod pour les tests</p>
-						</p>
-					</section>
-					<section>
-						<h2>Duvel.js: Screenshots</h2>
-						<p class="fragment" data-fragment-index="0">Crawler basé sur PhantomJS</p>
-						<p class="fragment" data-fragment-index="1">Définir une série de tests</p>
-						<p class="fragment" data-fragment-index="2">Les exécuter en même temps sur les deux serveurs</p>
-						<p class="fragment" data-fragment-index="3">Générer les screenshots dans un répertoire donné</p>
-					</section>
-					<section>
-						<h2>Exemple de test</h2>
-						<p><code><pre>
-									{
-	    "httpAuth": {
-	        "username": "httpauthuser",
-	        "password": "httpauthpass"
-	    },
-	    "routes": [
-	        {
-	            "route": "/login",
-	            "ignore": true
-	        },
-	        {
-	            "method": "POST",
-	            "route": "/login",
-	            "data": {
-	                    "email": "user@domain.com",
-	                    "password": "passw0rd",
-	            }
-	        },
-	        {
-	            "route": "/admin/email_viewer#/type/ASSESSMENT_REMINDER",
-	            "script": "$('#emailViewerTable tbody tr:first').click()",
-	            "wait": 500
-	        },
-	        {
-	            "route": "/logout",
-	            "ignore": true
-	        }
-	    ]
-	}
-						</pre></code></p>
-					</section>
-					<section>
-						<h2>Pdiff: Comparaison d'images</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">Application open source en C++</p>
-							<p class="fragment" data-fragment-index="1">Comparer les MD5 pour gagner du temps</p>
-							<p class="fragment" data-fragment-index="2">Génére une image différentielle</p>
-						</p>
-					</section>
-					<section>
-						<img src="img/sample_old.png"/>
-					</section>
-					<section>
-						<img src="img/sample_new.png"/>
-					</section>
-					<section>
-						<img src="img/sample_diff.png"/>
-					</section>
-					<section>
-						<h2>Valider les différences</h2>
-						<p>
-							<p class="fragment" data-fragment-index="0">Comparer directement les images générées</p>
-							<p class="fragment" data-fragment-index="1">Serveur pour lancer les tests / comparer les images (à venir)</p>
-							<p class="fragment" data-fragment-index="2">Intégrer dans votre propre build</p>
-						</p>
-					</section>
-					<section>
-						<h2>Comparer les diffs</h2>
-						<img src="img/sample_ci.png"/>
-					</section>
+					<h1>Tu peux pas test!</h1>
 				</section>
 
 				<section>
-					<section>
-						<h2>Ressources</h2>
+					<h2>Solution</h2>
+					<p class="fragment" data-fragment-index="0">Faire des screenshots de l'appli</p>
+					<p class="fragment" data-fragment-index="1">Les comparer</p>
+					<p class="fragment" data-fragment-index="2">Valider les différences</p>
+					<p class="fragment" data-fragment-index="3">Automatiser le processus</p>
+				</section>
+
+				<section>
+					<h2>Comparons deux révisions</h2>
+				</section>
+
+				<section data-background="img/sample_old.png" data-background-size="1024px"></section>
+
+				<section data-background="img/sample_new.png" data-background-size="1024px"></section>
+
+				<section>
+					<h2>Quelles sont les différences?</h2>
+				</section>
+
+				<section data-background="img/sample_diff.png" data-background-size="1024px"></section>
+
+				<section>
+					<h2>On détecte</h2>
+					<p class="fragment" data-fragment-index="0">Les changements de styles, layout, couleurs (même minimes)</p>
+					<p class="fragment" data-fragment-index="1">Les changements de contenu</p>
+					<p class="fragment" data-fragment-index="2">Les exceptions JS / erreurs de chargement</p>
+				</section>
+
+				<section>
+					<h2>On ne détecte pas</h2>
+					<p class="fragment" data-fragment-index="0">La cohérence des données</p>
+					<p class="fragment" data-fragment-index="1">Les erreurs, mais les différences entre les deux versions</p>
+				</section>
+
+				<section>
+					<h2>Comment ca marche</h2>
+					<p class="fragment" data-fragment-index="0">On déploie deux révisions de l'appli</p>
+					<p class="fragment" data-fragment-index="1">On crawl avec <a href="https://github.com/v-vansteen/duvel.js">duvel.js</a> pour prendre les screenshots</p>
+					<p class="fragment" data-fragment-index="2">On compare les images avec l'application <a href="https://github.com/v-vansteen/pdiff">pdiff</a></p>
+					<p class="fragment" data-fragment-index="3">On valide les différences via une appli web</p>
+				</section>
+
+				<section data-background="img/sample_ci.png" data-background-size="1500px"></section>
+
+				<section>
+					<h1>Et voilà!</h1>
+				</section>
+
+				<section>
+					<h2>Ressources</h2>
+					<p>
 						<p>
-							<p>
-								<p><a href="https://github.com/v-vansteen/duvel.js">Duvel.js</a></p>
-								<p>Crawler permettant de capturer les screenshots du site</p>
-							</p>
-							<p>
-								<p><a href="https://github.com/v-vansteen/pdiff">Perceptual diff</a></p>
-								<p>Application permettant de faire une diff entre deux images</p>
-							</p>
+							<p><a href="https://github.com/v-vansteen/duvel.js">Duvel.js</a></p>
+							<p>Crawler JS permettant de capturer les screenshots du site</p>
 						</p>
-					</section>
-					<section>
-						<h2>Des questions?</h2>
-					</section>
-					<section>
-						<h1>Merci!</h1>
-					</section>
+						<p>
+							<p><a href="https://github.com/v-vansteen/pdiff">Perceptual diff</a></p>
+							<p>Application permettant de faire une diff entre deux images</p>
+							<p>(possible aussi avec Imagemagick)</p>
+						</p>
+					</p>
+				</section>
+
+				<section>
+					<h1>Merci!</h1>
+					<p class="fragment" data-fragment-index="0">N'hésitez pas si vous voulez en discuter</p>
 				</section>
 
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
