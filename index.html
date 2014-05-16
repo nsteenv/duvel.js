@@ -46,13 +46,13 @@
 				<section>
 					<h1>Tu peux pas test!</h1>
 					<p>
-						<small>Présenté par <a href="http://vansteen.fr">Vincent Van Steenbergen</a> / <a href="http://twitter.com/nsteenv">@nsteenv</a></small>
+						<small>par <a href="http://vansteen.fr">Vincent Van Steenbergen</a> / <a href="http://twitter.com/nsteenv">@nsteenv</a></small>
 					</p>
 				</section>
 
 				<section>
 					<h2>Whoami</h2>
-					<p class="fragment" data-fragment-index="0">Développeur web freelance</p>
+					<p class="fragment" data-fragment-index="0">Dev. freelance</p>
 					<p class="fragment" data-fragment-index="1">Travaille pour une startup anglaise: Driver Exchange</p>
 					<p class="fragment" data-fragment-index="2">Application web avec une grosse base de code</p>
 					<p class="fragment" data-fragment-index="3">De plus en plus d'erreurs à chaque release</p>
@@ -61,10 +61,9 @@
 
 				<section>
 					<h2>Comment faire?</h2>
-					<p class="fragment" data-fragment-index="0">Ecrire des tests unitaires pour <strong>toute</strong> l'application?</p>
-					<p class="fragment" data-fragment-index="1">Peut prendre des mois, revient trés cher</p>
-					<p class="fragment" data-fragment-index="2">Besoin de maintenir les tests à chaque nouvelle évolution</p>
-					<p class="fragment" data-fragment-index="3"><strong>Surtout: personne n'avait envie de le faire!</strong></p>
+					<p class="fragment" data-fragment-index="0">Faire des tests fonctionnels?</p>
+					<p class="fragment" data-fragment-index="1">Ecrire des tests unitaires pour <strong>toute</strong> l'application?</p>
+					<p class="fragment" data-fragment-index="2"><strong>Surtout: personne n'avait envie de le faire!</strong></p>
 				</section>
 
 				<section>
@@ -79,34 +78,40 @@
 					</p>
 					<p class="fragment" data-fragment-index="0">Et si on fesait des screenshots de toute l'appli?</p>
 					<p class="fragment" data-fragment-index="1">En comparant les différences avec la révision précédente?</p>
-					<p class="fragment" data-fragment-index="3"><strong>Et en automatisant ce processus?</strong></p>
+					<p class="fragment" data-fragment-index="2"><strong>Et en automatisant ce processus?</strong></p>
 				</section>
 
 				<section>
 					<h2>Deux révisions d'une même page</h2>
 				</section>
 
-				<section data-background="img/sample_old.png" data-background-size="1024px"></section>
+				<section>
+					<img src="img/sample_old.png">
+				</section>
 
-				<section data-background="img/sample_new.png" data-background-size="1024px"></section>
+				<section>
+					<img src="img/sample_new.png">
+				</section>
 
 				<section>
 					<h2>On compare les différences</h2>
 				</section>
 
-				<section data-background="img/sample_diff.png" data-background-size="1024px"></section>
+				<section>
+					<img src="img/sample_diff.png">
+				</section>
 
 				<section>
 					<h2>Permet de détecter</h2>
 					<p class="fragment" data-fragment-index="0">Les changements de styles, layout, couleurs (même minimes)</p>
 					<p class="fragment" data-fragment-index="1">Les changements de contenu</p>
-					<p class="fragment" data-fragment-index="2">Les problémes d'affichage entre différentes résolutions</p>
-					<p class="fragment" data-fragment-index="3">Les erreurs de type  4xx, 5xx</p>
+					<p class="fragment" data-fragment-index="2">Les problèmes d'affichage entre différentes résolutions</p>
 				</section>
 
 				<section>
 					<h2>Ne permet pas de détecter</h2>
 					<p class="fragment" data-fragment-index="0">La cohérence des données</p>
+					<p class="fragment" data-fragment-index="1">Certaines erreurs dans du comportement de code dynamique</p>
 				</section>
 
 				<section>
@@ -116,7 +121,9 @@
 					<p class="fragment" data-fragment-index="2">Avoir une interface pour valider le tout facilement</p>
 				</section>
 
-				<section data-background="img/sample_ci.png" data-background-size="1500px"></section>
+				<section>
+					<img src="img/sample_ci.png">
+				</section>
 
 				<section>
 					<h2>Conclusion</h2>
@@ -136,8 +143,8 @@
 							<p>Crawler JS permettant de capturer les screenshots du site</p>
 						</p>
 						<p>
-							<p><a href="https://github.com/v-vansteen/pdiff">Imagemagick</a></p>
-							<p>Boite à outils de manipulation d'images. Perme de faire des comparaisons/différences entre deux images.</p>
+							<p><a href="http://www.imagemagick.org/">Imagemagick</a></p>
+							<p>Boite à outils de manipulation d'images. Permet de faire des comparaisons/différences entre deux images.</p>
 						</p>
 					</p>
 				</section>
